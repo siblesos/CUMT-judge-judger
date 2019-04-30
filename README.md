@@ -1,15 +1,9 @@
 
-# eagle-oj-judger
-
-## Document
-
-You can see document in http://docs.eagleoj.com/#/en/judger .
-
 ## You don't need to read following things
 
 ### 环境安装
 
-我们使用Ubuntu16.04已经通过测试
+使用Ubuntu16.04已经通过测试
 
 ```bash
 apt update
@@ -63,9 +57,6 @@ deactivate #如果需要退出虚拟环境执行该命令
 
 `gunicorn -k gevent -c gunicorn.conf Client:app #进入到Judger目录下在终端输入一下命令,并且需要在虚拟环境激活的情况下令`
 
-### 判卷机说明
-
-本判卷系统核心部分使用的是青岛大学的OJ判卷系统，在安装过程中如果出现疑问地方。[可以点击这里](http://docs.onlinejudge.me/#/judger/api)。
 
 ## 系统说明
 1. **语言支持**:
