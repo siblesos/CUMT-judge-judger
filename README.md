@@ -26,11 +26,11 @@ pip install -y gevent
 
 2.python binding
 
-`sudo python setup.py install  #位于eagle-oj-judger/bindings/Python/目录`
+`sudo python setup.py install  #位于CUMT-judge-judger/bindings/Python/目录`
 
 3.add server packge and model packge to python environemnt
 
-`sudo python3 initEnv.py #位于eagle-oj-judger/Judger/server/目录下`
+`sudo python3 initEnv.py #位于CUMT-judge-judger/Judger/server/目录下`
 
 4.Edit gunicorn.conf
 
