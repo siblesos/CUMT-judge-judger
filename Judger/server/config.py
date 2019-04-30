@@ -55,15 +55,15 @@ lang_config={
 
 sys_config = {
     #日志文件所在路径
-    'logfile':'/usr/eagle-oj-judger/Judger/judge.log',
+    'logfile':'/usr/CUMT-judge-judger/Judger/judge.log',
     #提交的代码和测试用例存储的位置
     'outfile': '/usr/JudgeResult',
     #是否删除每次所产生的文件
     'removefile':True,
     #model包的路径
-    'model':'/usr/eagle-oj-judger/Judger/model',
+    'model':'/usr/CUMT-judge-judger/Judger/model',
     #server包的路径
-    'server':'/usr/eagle-oj-judger/Judger/server',
+    'server':'/usr/CUMT-judge-judger/Judger/server',
     #指定运行系统的uid和gid,为了保证系统的安全运行请务必创建新用户
     'uid':1001,
     'gid':1001
