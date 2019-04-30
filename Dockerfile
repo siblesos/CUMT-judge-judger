@@ -13,8 +13,8 @@ RUN apt update && \
 	apt install -y  git && \
 	pip3 install --no-cache-dir flask gunicorn gevent virtualenv psutil flask_cors && \
 	cd /usr && \
-	git clone https://github.com/Eagle-OJ/eagle-oj-judger.git --depth=1 && \
-	cd eagle-oj-judger && \
+	git clone https://github.com/siblesos/CUMT-judge-judger.git --depth=1 && \
+	cd CUMT-judge-judger && \
 	mkdir build && \
 	cd build && \
 	cmake .. && \
@@ -22,7 +22,7 @@ RUN apt update && \
 	make install && \
 	cd ../bindings/Python && \
 	python3 setup.py install && \
-	python3 /usr/eagle-oj-judger/Judger/server/initEnv.py  && \
+	python3 /usr/CUMT-judge-judger/Judger/server/initEnv.py  && \
 	cd /usr && \
 	mkdir myenv && \
 	cd myenv && \
@@ -31,8 +31,8 @@ RUN apt update && \
 	apt clean && \
 	apt autoremove && \
 	rm -rf /var/lib/apt/lists/* && \
-	chmod +x /usr/eagle-oj-judger/run.sh
+	chmod +x /usr/CUMT-judge-judger/run.sh
 
-CMD ./usr/eagle-oj-judger/run.sh
+CMD ./usr/CUMT-judge-judger/run.sh
 
 EXPOSE 5000
